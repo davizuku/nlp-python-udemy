@@ -1,0 +1,12 @@
+version: '3.2'
+services:
+  tensorflow:
+    container_name: nlp-udemy-$USER
+    build:
+      context: .
+    volumes:
+      - ./src:/notebooks/src
+      - ./data:/notebooks/data
+    ports:
+      - "8888:8888"
+      # - "8083:8888"

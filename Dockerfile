@@ -26,5 +26,6 @@ RUN mkdir /vendor && \
     cd /vendor && \
     git clone https://github.com/lazyprogrammer/machine_learning_examples
 
-RUN ln -s /data /vendor/machine_learning_examples/nlp_class2/large_files
-RUN ln -s /notebooks/machine_learning_examples /vendor/machine_learning_examples
+RUN rm -rf /notebooks/*
+RUN ln -s /notebooks/data /vendor/machine_learning_examples/nlp_class2/large_files
+RUN ln -s /vendor /notebooks/vendor
