@@ -8,5 +8,4 @@ services:
       - ./src:/notebooks/src
       - ./data:/notebooks/data
     ports:
-      - "8888:8888"
-      # - "8083:8888"
+      - "8083:8888"
