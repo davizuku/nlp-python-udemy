@@ -17,6 +17,7 @@ RUN pip install sumy
 RUN pip install newsapi-python
 RUN pip install rouge
 RUN pip install future
+RUN pip install gensim
 
 # course materials
 
