@@ -17,6 +17,7 @@ RUN pip install sumy
 RUN pip install newsapi-python
 RUN pip install rouge
 RUN pip install future
+RUN pip install gensim
 
 # course materials
 
@@ -25,5 +26,5 @@ RUN mkdir /vendor && \
     git clone https://github.com/lazyprogrammer/machine_learning_examples
 
 RUN rm -rf /notebooks/*
-RUN ln -s /notebooks/data /vendor/machine_learning_examples/nlp_class2/large_files
+RUN ln -s /notebooks/large_files /vendor/machine_learning_examples/large_files
 RUN ln -s /vendor /notebooks/vendor
