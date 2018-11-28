@@ -6,6 +6,6 @@ services:
       context: .
     volumes:
       - ./src:/notebooks/src
-      - ./data:/notebooks/data
+      - ./data:/notebooks/large_files
     ports:
       - "8083:8888"
