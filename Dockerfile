@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:latest
+FROM tensorflow/tensorflow:1.12.0-py3
 
 RUN apt-get update
 RUN apt-get install -y git
@@ -14,8 +14,6 @@ RUN gem install wp2txt
 RUN pip install --upgrade pip
 RUN pip install git+git://github.com/davidadamojr/TextRank.git
 RUN pip install sumy
-RUN easy_install hashlib
-RUN pip install hashlib
 RUN pip install newsapi-python
 RUN pip install rouge
 RUN pip install future
