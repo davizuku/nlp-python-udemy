@@ -19,6 +19,8 @@ RUN pip install rouge
 RUN pip install future
 RUN pip install gensim
 
+RUN apt-get install texlive-xetex
+
 # course materials
 
 RUN mkdir /vendor && \
