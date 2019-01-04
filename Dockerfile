@@ -18,6 +18,7 @@ RUN pip install newsapi-python
 RUN pip install rouge
 RUN pip install future
 RUN pip install gensim
+RUN pip install theano
 
 # course materials
 
