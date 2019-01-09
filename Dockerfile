@@ -38,6 +38,6 @@ ENV LC_ALL en_US.UTF-8
 
 RUN rm -rf /notebooks/*
 RUN ln -s /notebooks/large_files /vendor/machine_learning_examples/large_files
-RUN ln -s /notebooks/large_files/chunking /notebooks/src/chunking
 RUN ln -s /vendor /notebooks/vendor
-RUN cp /notebooks/large_files/ner.txt /notebooks/src
+# RUN cp -r /notebooks/large_files/chunking /notebooks/src
+# RUN cp /notebooks/large_files/ner.txt /notebooks/src
